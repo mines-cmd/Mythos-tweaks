@@ -1,9 +1,0 @@
-AddonId: Mythos_9f42c1a7-6d8e-4b3f-b0a2-7e9c5d3f18a4
-Packages:
-  - Version: 1.1
-    RequiredApiVersion: 2.6.0
-    ReleaseDate: 2025-06-27
-    PackageUrl: https://github.com/bansakai/Mythos/releases/download/Latest/Mythos_9f42c1a7-6d8e-4b3f-b0a2-7e9c5d3f18a4_1_1.pthm
-    Changelog: 
-      - Initial Release
-
