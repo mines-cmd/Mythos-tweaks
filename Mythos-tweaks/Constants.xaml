@@ -87,7 +87,7 @@
     <SolidColorBrush x:Key="GreenBrush" Color="{DynamicResource GreenColor}" />
 
     <Color x:Key="PopupBackgroundColor">#000000</Color>
-    <Color x:Key="PopupBorderColor">#2f3336</Color>
+    <Color x:Key="PopupBorderColor">#202931</Color>
     
     <Color x:Key="BackgroundToneColor">#FFCC00</Color>
     <Color x:Key="GridItemBackgroundColor">#151e3d</Color>
@@ -112,18 +112,30 @@
     <SolidColorBrush x:Key="GlobalBackgroundBrush" Color="Transparent" />
     
     <!--InputStyle-->
-    <SolidColorBrush x:Key="ControlIdleBackgroundBrush" Color="#15181b" />
-    <SolidColorBrush x:Key="ControlIdleBorderBrush" Color="#2f3336" />
+    <!-- <SolidColorBrush x:Key="ControlIdleBackgroundBrush" Color="#504e5765" /> -->
+    <LinearGradientBrush x:Key="ControlIdleBackgroundBrush" StartPoint="0.5,0" EndPoint="0.5,1" >
+        <GradientStop Color="#506f7c90" Offset="0"/>
+        <GradientStop Color="#504e5765" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ControlIdleBorderBrush" Color="#00000000" />
 
-    <SolidColorBrush x:Key="ControlHoverBackgroundBrush" Color="#1c1f22" />
-    <SolidColorBrush x:Key="ControlHoverBorderBrush" Color="#2f3336" />
+    <!-- <SolidColorBrush x:Key="ControlHoverBackgroundBrush" Color="#192129" /> -->
+    <LinearGradientBrush x:Key="ControlHoverBackgroundBrush" StartPoint="0.5,0" EndPoint="0.5,1" >
+        <GradientStop Color="#50c5cbd3" Offset="0"/>
+        <GradientStop Color="#506f7c90" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ControlHoverBorderBrush" Color="#192129" />
 
-    <SolidColorBrush x:Key="ControlSelectedBackgroundBrush" Color="#2f3336" />
+    <!-- <SolidColorBrush x:Key="ControlSelectedBackgroundBrush" Color="#506f7c90" /> -->
+    <LinearGradientBrush x:Key="ControlSelectedBackgroundBrush" StartPoint="0.5,0" EndPoint="0.5,1" >
+        <GradientStop Color="#509aa3b1" Offset="0"/>
+        <GradientStop Color="#506f7c90" Offset="1"/>
+    </LinearGradientBrush>
     <!--InputStyle Ends-->
 
     <!--PopupStyle-->
     <SolidColorBrush x:Key="PopupIdleBackgroundBrush" Color="#15181b" />
-    <SolidColorBrush x:Key="PopupHoverBackgroundBrush" Color="#2f3336" />
+    <SolidColorBrush x:Key="PopupHoverBackgroundBrush" Color="#21252b" />
     <!--PopupStyle Ends-->
 
     <SolidColorBrush x:Key="ControlFilledHoverBackgroundBrush" Color="{DynamicResource 24%White}" />
@@ -149,7 +161,7 @@
     <SolidColorBrush x:Key="SecondaryButtonBrush" Color="#e7e9ea" />
     <!--ButtonStyle Ends-->
 
-    <SolidColorBrush x:Key="DisabledBrush" Color="#2f3336" />
+    <SolidColorBrush x:Key="DisabledBrush" Color="#21252b" />
     <SolidColorBrush x:Key="LinkButtonBrush" Color="#6800D1" />
     <SolidColorBrush x:Key="PromptBrush" Color="#999999" />
     <SolidColorBrush x:Key="SubtalBrush" Color="#999999" />
@@ -200,7 +212,7 @@
         <GradientStop Color="#002C3A67" Offset="0.7"/>
     </LinearGradientBrush>
 
-    <ImageBrush x:Key="WindowImageBackgroundBrush">
+    <!-- <ImageBrush x:Key="WindowImageBackgroundBrush">
         <ImageBrush.ImageSource>
             <BitmapImage UriSource="Images/GBackground.jpg"/>
         </ImageBrush.ImageSource>
@@ -210,7 +222,7 @@
         <ImageBrush.ImageSource>
             <BitmapImage UriSource="Images/MainBackground.jpg"/>
         </ImageBrush.ImageSource>
-    </ImageBrush>
+    </ImageBrush> -->
 
     <LinearGradientBrush x:Key="PlayButtonBackgroundBrush" StartPoint="0.5,0" EndPoint="0.5,1" >
         <GradientStop Color="#FF04A5FF" Offset="0"/>
